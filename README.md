@@ -81,6 +81,13 @@ require("ts-node").register({
 
 `"test": "node_modules/.bin/nyc mocha"`
 
+Although, you can separate the test and coverage like the following:
+
+```
+"test": "node_modules/.bin/mocha"
+"coverage": "node_modules/.bin/nyc mocha"
+```
+
 Now, the coverage test result will be available under `test/coverage-mocha` directory.
 
 10. Just like the Jest version, create a new `app.spec.ts` file for testing inside the `test/unit-mocha` directory.
