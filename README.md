@@ -64,6 +64,7 @@ require("ts-node").register({
     ".ts",
     ".tsx"
   ],
+  "include": "src",
   "exclude": [
     "**/*.d.ts"
   ],
