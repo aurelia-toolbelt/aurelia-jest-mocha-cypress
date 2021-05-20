@@ -6,7 +6,7 @@ To add `Mocha/Chai/Sinon` beside `Jest` in an official Aurelia v1's `Jest/Cypres
 	* Change `Options.relativeToDir = path.join(__dirname, 'unit');` line inside `test\jest-pretest.ts` to `Options.relativeToDir = path.join(__dirname, 'unit-jest');`.
 	* Change `"test": "au test",` inside `package.json` to `"test-jest": "au test",`.
 	
-2. Create a clone of `tsconfig.json` with name of `tsconfig.test.json` in root directory with these new changes
+2. Create a clone of `tsconfig.json` with name of `tsconfig.mocha-test.json` in root directory with these new changes
 
 ```js
 "module": "commonjs",
@@ -32,7 +32,7 @@ npm install -D ts-node mocha chai sinon nyc @types/mocha @types/chai @types/sino
 yarn add -D ts-node mocha chai sinon nyc @types/mocha @types/chai @types/sinon
 ```
 
-5. Create a new folder for Mocha test `test/unit-mocha`.
+5. Create a new folder for `Mocha` tests `test/unit-mocha`.
 
 6. Create `.mocharc.js` file in root directory with the following content
 
@@ -80,9 +80,9 @@ require("ts-node").register({
 
 `"test": "node_modules/.bin/nyc mocha"`
 
-Now, the coverage test result will be available under `test/coverage-mocha` directory in HTML or text mode.
+Now, the coverage test result will be available under `test/coverage-mocha` directory.
 
-10. Just like the Jest version, create a new `app.spec.ts` file inside `test/unit-mocha` directory.
+10. Just like the Jest version, create a new `app.spec.ts` file for testing inside the `test/unit-mocha` directory.
 
 ```js
 import {App} from '../../src/app';
