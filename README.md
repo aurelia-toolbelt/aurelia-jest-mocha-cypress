@@ -102,3 +102,19 @@ describe('the app', () => {
   });
 });
 ```
+
+Tip: Maybe you see some Typescript errors in your project so add the following config to your main TypeScript configuration (`tsconfig.json`).
+
+```js
+"exclude": [ "test/coverage-jest", "test/coverage-mocha", "test/mocha-pretest.js" ],
+```
+
+and also check do you have the `iterable` config for working with Cypress without problem or not.
+
+```js
+"lib": [
+    // ...
+    "es2015.iterable",
+    // ...
+],
+```
