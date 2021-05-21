@@ -103,7 +103,7 @@ describe('the app', () => {
 });
 ```
 
-Tip: Maybe you see some Typescript errors in your project so add the following config to your main TypeScript configuration (`tsconfig.json`).
+Tip: Maybe you see some TypeScript errors in your project, so, add the following configs to your main TypeScript configuration (`tsconfig.json`).
 
 ```js
 "exclude": [ "test/coverage-jest", "test/coverage-mocha", "test/mocha-pretest.js" ],
